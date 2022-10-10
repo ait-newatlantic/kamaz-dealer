@@ -46,7 +46,7 @@ export default function Search({ makes, models }: SearchProps) {
                                 id="search-make"
                                 className="block uppercase tracking-wide text-gray-700 text-xs text-left font-bold mb-2 "
                             >
-                                Make
+                                Phân khúc
                             </label>
                             <div className="relative">
                                 <Field
@@ -55,7 +55,7 @@ export default function Search({ makes, models }: SearchProps) {
                                     className="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                                     id="search-make"
                                 >
-                                    <option className="italic" value="all" label="All Makes" />
+                                    <option className="italic" value="all" label="Tất cả" />
                                     {makes.map((make, index) => (
                                         <option
                                             key={index}
@@ -85,7 +85,7 @@ export default function Search({ makes, models }: SearchProps) {
                                 id="search-min-price"
                                 className="block uppercase tracking-wide text-gray-700 text-xs text-left font-bold mb-2"
                             >
-                                Min Price
+                                Giá thấp nhất
                             </label>
                             <div className="relative">
                                 <Field
@@ -94,11 +94,7 @@ export default function Search({ makes, models }: SearchProps) {
                                     className="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                                     id="search-min-price"
                                 >
-                                    <option
-                                        className="italic"
-                                        value="all"
-                                        label="No minimum price"
-                                    />
+                                    <option className="italic" value="all" label="Tất cả" />
                                     {prices.map((price, index) => (
                                         <option key={index} value={price}>
                                             {price}
@@ -121,7 +117,7 @@ export default function Search({ makes, models }: SearchProps) {
                                 id="search-max-price"
                                 className="block uppercase tracking-wide text-gray-700 text-xs text-left font-bold mb-2"
                             >
-                                Max Price
+                                Giá cao nhất
                             </label>
                             <div className="relative">
                                 <Field
@@ -130,11 +126,7 @@ export default function Search({ makes, models }: SearchProps) {
                                     className="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                                     id="search-max-price"
                                 >
-                                    <option
-                                        className="italic"
-                                        value="all"
-                                        label="No maximum price"
-                                    />
+                                    <option className="italic" value="all" label="Tất cả" />
                                     {prices.map((price, index) => (
                                         <option key={index} value={price}>
                                             {price}
@@ -205,7 +197,7 @@ export function ModelSelector({ initialMake, models, make, ...props }: ModelSele
                     {...field}
                     {...props}
                 >
-                    <option className="italic" value="all" label="All Models" />
+                    <option className="italic" value="all" label="Tất cả" />
                     {newModels?.map((model, index) => (
                         <option
                             key={index}

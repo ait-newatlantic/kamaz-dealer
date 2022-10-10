@@ -5,17 +5,17 @@ import { FiHome, FiMessageSquare, FiFilter } from 'react-icons/fi';
 export const routes = [
     {
         href: '/',
-        key: 'home',
+        key: 'trang chủ',
         icon: <FiHome />,
     },
     {
         href: '/cars',
-        key: 'cars',
+        key: 'Sản phẩm',
         icon: <FiFilter />,
     },
     {
         href: '/faq',
-        key: 'faq',
+        key: 'THẮC MẮC',
         icon: <FiMessageSquare />,
     },
 ];

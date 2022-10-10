@@ -5,7 +5,6 @@ import { getCarById, getMakes, getModels } from 'database/api/car';
 import CarNotFound from 'components/CarNotFound';
 import { getAsString } from 'utils';
 import SEO from 'components/SEO';
-import Image from 'next/image';
 
 interface CarDetailsProps {
     car: CarModel | null;
@@ -25,12 +24,11 @@ export default function CarDetails({ car }: CarDetailsProps) {
 
             <div className="container mx-auto mt-10 shadow-2xl rounded-md">
                 <div className="lg:flex">
-                    <div className="w-full md:flex-shrink-0 w-2/3 lg:w-2/3 md:w-full sm:w-full">
-                        <Image
+                    <div className="w-full md:flex-shrink-0 lg:w-2/3 md:w-full sm:w-full">
+                        <img
                             className="rounded-lg md:w-full"
                             src={car.photoUrl}
                             alt={`${car.make} ${car.model} (${car.year})`}
-                            unsized
                         />
                     </div>
                     <div className="p-5">
@@ -41,7 +39,7 @@ export default function CarDetails({ car }: CarDetailsProps) {
                             <span className="text-xl">
                                 {new Intl.NumberFormat('pt-BR', {
                                     style: 'currency',
-                                    currency: 'BRL',
+                                    currency: 'VND',
                                     minimumFractionDigits: 0,
                                 }).format(car?.price || 0)}
                             </span>
@@ -90,7 +88,9 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
             .map((model) => model.name.toLowerCase())
             .includes(model.toLowerCase());
 
-        const isCarValid = car.make === make && car.model === model;
+        const isCarValid =
+            ((car as unknown) as CarModel).make === make &&
+            ((car as unknown) as CarModel).model === model;
 
         if (isMakeValid && isModelValid && isCarValid) return { props: { car } };
     } catch (err) {

@@ -22,7 +22,7 @@ export default function CarItem({ car, error, isValidating }: CarItemProps) {
                             className="absolute w-full h-full object-cover"
                             src={car.photoUrl}
                             alt={`${car.make} ${car.model} (${car.year})`}
-                            unsized
+                            layout="fill"
                         />
                     </div>
                     <div className="px-6 py-4 overflow-hidden relative">
@@ -47,7 +47,7 @@ export default function CarItem({ car, error, isValidating }: CarItemProps) {
                         <div className="font-bold text-l text-gray-800 mb-2">
                             {new Intl.NumberFormat('pt-BR', {
                                 style: 'currency',
-                                currency: 'BRL',
+                                currency: 'VND',
                                 minimumFractionDigits: 0,
                             }).format(car.price)}
                         </div>
