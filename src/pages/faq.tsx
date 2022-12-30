@@ -11,12 +11,12 @@ export default function Faq({ faq }: FaqProps) {
     return (
         <>
             <SEO
-                title={'FAQ'}
-                description={'Got any questions? Check our Frequently Ask Questions'}
+                title={'Liên hệ'}
+                description={'Liên hệ với chúng tôi | Xe kamaz chính hãng'}
                 canonicalPath={`/faq`}
             />
             <div className="text-3xl text-center font-bold mt-20">
-                <h1>Have any questions ?</h1>
+                <h1>Thông tin liên hệ</h1>
             </div>
             <div className="m-24">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12">

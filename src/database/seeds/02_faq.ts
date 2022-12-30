@@ -5,32 +5,32 @@ export async function seed(knex: Knex) {
     return knex('faq').insert([
         {
             id: 1,
-            question: 'How to be safe buying online?',
-            answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo',
+            question: 'Địa chỉ',
+            answer: '60 Đ. Phú Thuận, Phú Thuận, Quận 7, Thành phố Hồ Chí Minh',
             createDate: new Date(),
         },
         {
             id: 2,
-            question: 'Do I have any assurance on my new car?',
-            answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo',
+            question: 'Phụ trách kinh doanh',
+            answer: '0926 62 6568 - Mr.Thuấn',
             createDate: new Date(),
         },
         {
             id: 3,
-            question: 'How many kilometers a normal car can have?',
-            answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo',
+            question: 'Phụ trách kỹ thuật',
+            answer: '0989 75 9498 - Mr.Thịnh | 0972 95 9889 - Mr.Hai',
             createDate: new Date(),
         },
         {
             id: 4,
-            question: 'What is the best month to buy a car?',
-            answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo',
+            question: 'Chăm sóc khách hàng',
+            answer: '028 3873 3486',
             createDate: new Date(),
         },
         {
             id: 5,
-            question: 'How to know the car history?',
-            answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo',
+            question: 'Phụ tùng',
+            answer: '0913 14 6752',
             createDate: new Date(),
         },
     ]);
