@@ -7,6 +7,6 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 module.exports = withPlugins([[withBundleAnalyzer({})]], {
     images: {
         deviceSizes: [320, 640, 768, 1024, 1200],
-        domains: ['kamazvietnam.com.vn'],
+        domains: ['kamazvietnam.com.vn', 'cloud.newatlantic.vn'],
     },
 });

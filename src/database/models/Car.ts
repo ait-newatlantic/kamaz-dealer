@@ -8,6 +8,7 @@ export interface CarModel {
     details: string;
     price: number;
     photoUrl: string;
+    specUrl: string;
 }
 
 export interface MakeSelect {

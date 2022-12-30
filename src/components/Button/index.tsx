@@ -20,7 +20,7 @@ export default function Button({ classType, text, pathName, ...props }: ButtonPr
                     <span className="mr-2">
                         <FaSearch />
                     </span>
-                    {text || 'Search'}
+                    {text || 'Tìm kiếm'}
                 </button>
             );
         case 'back':

@@ -65,6 +65,11 @@ export default function CarDetails({ car }: CarDetailsProps) {
                     </div>
                 </div>
             </div>
+            <img
+                className="container mx-auto mt-10 shadow-2xl rounded-md"
+                src={car?.specUrl}
+                alt={`spec of ${car.make} ${car.model} (${car.year})`}
+            />
         </>
     );
 }

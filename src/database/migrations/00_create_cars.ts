@@ -11,6 +11,7 @@ export async function up(knex: Knex) {
         table.string('details').notNullable();
         table.integer('price').notNullable();
         table.string('photoUrl').notNullable();
+        table.string('specUrl').notNullable();
     });
 }
 
