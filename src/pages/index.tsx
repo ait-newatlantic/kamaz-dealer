@@ -18,6 +18,7 @@ export default function Home({ makes, models }: HomeProps) {
                 description={'Find used cars for sale near your area.'}
                 canonicalPath={`/`}
             />
+            <img className="h-40 mx-auto mt-10" src="/img/kamaz.png" alt="logo" />
             <div className="container m-12 mx-auto px-6 py-6 rounded shadow-lg xl:w-2/6 lg:w-2/6 md:w-3/6 sm:w-3/6">
                 <Search makes={makes} models={models} />
             </div>

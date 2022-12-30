@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { FaNewspaper } from 'react-icons/fa';
-import { FiHome, FiMessageSquare, FiFilter, FiBook } from 'react-icons/fi';
+import { FiHome, FiMessageSquare, FiFilter } from 'react-icons/fi';
 
 export const routes = [
     {
