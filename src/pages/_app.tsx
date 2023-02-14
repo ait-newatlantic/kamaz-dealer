@@ -32,7 +32,10 @@ Router.events.on('routeChangeError', (err, url) => {
 function MyApp({ Component, pageProps }: AppProps) {
     return (
         <>
-            <SEO title={'Home'} />
+            <SEO
+                title={'Home'}
+                description={`Công ty cổ phần KAMAZ VIỆT NAM | Liên hệ ${data.phone_number} (Mr ${data.name})`}
+            />
             <div className="flex flex-col h-screen">
                 <ContactBar />
                 <Header />

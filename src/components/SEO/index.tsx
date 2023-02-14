@@ -12,7 +12,7 @@ export interface SEOProps {
 export default function SEO({ title, description, canonicalPath, image }: SEOProps) {
     return (
         <NextHead>
-            <title>{`Kamaz | ${title}` || SEO_VALUES.title}</title>
+            <title>{`Kamaz Việt Nam | ${title}` || SEO_VALUES.title}</title>
             <link rel="icon" href="/favicon.ico" />
             <meta charSet="utf-8" />
             <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
@@ -25,6 +25,12 @@ export default function SEO({ title, description, canonicalPath, image }: SEOPro
                 content={`${SEO_VALUES.indexable === true ? 'index, follow' : 'noindex, nofollow'}`}
             />
             <meta name="description" content={description || SEO_VALUES.description} />
+            <meta name="description" content={data.address} />
+            <meta name="description" content={data.branch_name} />
+            <meta name="description" content={data.name} />
+            <meta name="description" content={data.phone_number} />
+            <meta name="description" content={data.email} />
+            <meta name="twitter:card" content={SEO_VALUES.twitter.cardType} />
             <meta
                 property="og:url"
                 content={`${SEO_VALUES.openGraph.host}${canonicalPath ?? ''}`}
@@ -34,12 +40,6 @@ export default function SEO({ title, description, canonicalPath, image }: SEOPro
             <meta property="og:locale" content={SEO_VALUES.openGraph.locale} key="title" />
             {description && <meta property="og:description" content={description} />}
             {image && <meta property="og:image" content={image} />}
-            <meta name="description" content={data.address} />
-            <meta name="description" content={data.branch_name} />
-            <meta name="description" content={data.name} />
-            <meta name="description" content={data.phone_number} />
-            <meta name="description" content={data.email} />
-            <meta name="twitter:card" content={SEO_VALUES.twitter.cardType} />
             {SEO_VALUES.twitter.author && (
                 <meta name="twitter:site" content={SEO_VALUES.twitter.author} />
             )}

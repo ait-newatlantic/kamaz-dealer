@@ -15,7 +15,7 @@ export default function Home({ makes, models }: HomeProps) {
         <>
             <SEO
                 title={'Home'}
-                description={'Find used cars for sale near your area.'}
+                description={'Công ty cổ phần KAMAZ VIỆT NAM.'}
                 canonicalPath={`/`}
             />
             <div className="lg:grid grid-cols-2 relative hidden">
