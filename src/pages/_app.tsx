@@ -48,7 +48,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     return (
         <>
             <SEO
-                title={'Home'}
+                title={'Trang chủ'}
                 description={`Công ty cổ phần KAMAZ VIỆT NAM | Liên hệ ${process.env.NEXT_PUBLIC_PHONE_NUMBER} (Mr ${process.env.NEXT_PUBLIC_USER_NAME})`}
             />
             <Particles
