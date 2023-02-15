@@ -40,7 +40,7 @@ export default function Home({ makes, models }: HomeProps) {
                 <div>
                     <img className="h-40 mx-auto font-bold" src="/img/kamaz.png" alt="logo" />
                     <p className="text-center mt-4 uppercase text-blue-700 font-bold">
-                        Công ty cổ phẩn KAMAZ Việt Nam
+                        {process.env.NEXT_PUBLIC_COMPANY_NAME}
                     </p>
                     <p className="text-center mt-4 font-semibold uppercase">
                         {process.env.NEXT_PUBLIC_COMPANY_ADDRESS}
