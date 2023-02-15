@@ -5,7 +5,6 @@ import { getCarById, getMakes, getModels } from 'database/api/car';
 import CarNotFound from 'components/CarNotFound';
 import { getAsString } from 'utils';
 import SEO from 'components/SEO';
-import { data } from 'data';
 
 interface CarDetailsProps {
     car: CarModel | null;
@@ -62,7 +61,8 @@ export default function CarDetails({ car }: CarDetailsProps) {
                             </div>
                         </div>
                         <p className="mt-20 font-bold text-lg">
-                            Liên hệ mua xe: {data.phone_number} (Mr. {data.name})
+                            Liên hệ mua xe: {process.env.PHONE_NUMBER} (Mr. {process.env.USER_NAME})
+                            | Email: {process.env.USER_EMAIL}
                         </p>
                     </div>
                 </div>
