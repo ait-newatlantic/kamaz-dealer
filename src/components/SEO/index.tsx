@@ -23,12 +23,10 @@ export default function SEO({ title, description, canonicalPath, image }: SEOPro
                 name="googlebot"
                 content={`${SEO_VALUES.indexable === true ? 'index, follow' : 'noindex, nofollow'}`}
             />
-            <meta name="description" content={description || SEO_VALUES.description} />
-            <meta name="description" content={process.env.NEXT_PUBLIC_COMPANY_ADDRESS} />
-            <meta name="description" content={process.env.NEXT_PUBLIC_COMPANY_NAME} />
-            <meta name="description" content={process.env.NEXT_PUBLIC_USER_NAME} />
-            <meta name="description" content={process.env.NEXT_PUBLIC_PHONE_NUMBER} />
-            <meta name="description" content={process.env.NEXT_PUBLIC_USER_EMAIL} />
+            <meta
+                name="description"
+                content={`${description} + Chuyên cung cấp xe tải, ben giá rẻ | Liên hệ ${process.env.NEXT_PUBLIC_PHONE_NUMBER} (Mr. ${process.env.NEXT_PUBLIC_USER_NAME})`}
+            />
             <meta name="twitter:card" content={SEO_VALUES.twitter.cardType} />
             <meta property="og:image" content="/thumbnail.jpeg" />
             <meta
