@@ -10,7 +10,10 @@ import 'nprogress/nprogress.css';
 import { Footer } from 'components/Footer';
 import { IconPhone } from 'components/icons/components/IconPhone';
 import { ContactBar } from 'components/ContactBar';
-import { data } from 'data';
+import { useCallback } from 'react';
+import type { Container, Engine } from 'tsparticles-engine';
+import Particles from 'react-particles';
+import { loadFull } from 'tsparticles';
 
 NProgress.configure({ showSpinner: false });
 
@@ -30,11 +33,107 @@ Router.events.on('routeChangeError', (err, url) => {
 });
 
 function MyApp({ Component, pageProps }: AppProps) {
+    const particlesInit = useCallback(async (engine: Engine) => {
+        console.log(engine);
+
+        // you can initialize the tsParticles instance (engine) here, adding custom shapes or presets
+        // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
+        // starting from v2 you can add only the features you need reducing the bundle size
+        await loadFull(engine);
+    }, []);
+
+    const particlesLoaded = useCallback(async (container: Container | undefined) => {
+        await console.log(container);
+    }, []);
     return (
         <>
             <SEO
                 title={'Home'}
-                description={`Công ty cổ phần KAMAZ VIỆT NAM | Liên hệ ${data.phone_number} (Mr ${data.name})`}
+                description={`Công ty cổ phần KAMAZ VIỆT NAM | Liên hệ ${process.env.NEXT_PUBLIC_PHONE_NUMBER} (Mr ${process.env.NEXT_PUBLIC_USER_NAME})`}
+            />
+            <Particles
+                id="tsparticles"
+                init={particlesInit}
+                loaded={particlesLoaded}
+                options={{
+                    fullScreen: {
+                        enable: true,
+                        zIndex: -1,
+                    },
+                    background: {
+                        color: {
+                            value: '#0d47a1',
+                        },
+                    },
+                    backgroundMask: {
+                        enable: true,
+                    },
+                    fpsLimit: 120,
+                    interactivity: {
+                        events: {
+                            onClick: {
+                                enable: true,
+                                mode: 'push',
+                            },
+                            onHover: {
+                                enable: true,
+                                mode: 'repulse',
+                            },
+                            resize: true,
+                        },
+                        modes: {
+                            push: {
+                                quantity: 4,
+                            },
+                            repulse: {
+                                distance: 200,
+                                duration: 0.4,
+                            },
+                        },
+                    },
+                    particles: {
+                        color: {
+                            value: '#ffffff',
+                        },
+                        links: {
+                            color: '#ffffff',
+                            distance: 150,
+                            enable: true,
+                            opacity: 0.4,
+                            width: 1,
+                        },
+                        collisions: {
+                            enable: true,
+                        },
+                        move: {
+                            direction: 'none',
+                            enable: true,
+                            outModes: {
+                                default: 'bounce',
+                            },
+                            random: false,
+                            speed: 3,
+                            straight: false,
+                        },
+                        number: {
+                            density: {
+                                enable: true,
+                                area: 800,
+                            },
+                            value: 80,
+                        },
+                        opacity: {
+                            value: 0.4,
+                        },
+                        shape: {
+                            type: 'circle',
+                        },
+                        size: {
+                            value: { min: 1, max: 5 },
+                        },
+                    },
+                    detectRetina: true,
+                }}
             />
             <div className="flex flex-col h-screen">
                 <ContactBar />
@@ -49,7 +148,7 @@ function MyApp({ Component, pageProps }: AppProps) {
                     </SWRConfig>
                 </div>
                 <div className="fixed right-10 bottom-20 bg-yellow-500 p-3 rounded-full animate-bounce">
-                    <a href={data.phone_action}>
+                    <a href={process.env.NEXT_PUBLIC_PHONE_NUMBER_ACTION}>
                         <IconPhone className="text-white" />
                     </a>
                 </div>

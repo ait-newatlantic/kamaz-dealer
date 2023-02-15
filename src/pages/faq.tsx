@@ -2,7 +2,6 @@ import { GetStaticProps } from 'next';
 import { FaqModel } from 'database/models/Faq';
 import db from 'database/connection';
 import SEO from 'components/SEO';
-import { data } from 'data';
 
 interface FaqProps {
     faq: FaqModel[];
@@ -29,7 +28,8 @@ export default function Faq({ faq }: FaqProps) {
                         </div>
                         <div className="mt-2">
                             <span className="text-l">
-                                {data.phone_number} - Mr. {data.name}
+                                {process.env.NEXT_PUBLIC_PHONE_NUMBER} - Mr.{' '}
+                                {process.env.NEXT_PUBLIC_USER_NAME}
                             </span>
                         </div>
                     </div>
@@ -38,7 +38,9 @@ export default function Faq({ faq }: FaqProps) {
                             <span className="text-xl font-bold">Địa chỉ</span>
                         </div>
                         <div className="mt-2">
-                            <span className="text-l">{data.address}</span>
+                            <span className="text-l">
+                                {process.env.NEXT_PUBLIC_COMPANY_ADDRESS}
+                            </span>
                         </div>
                     </div>
                     {faq.map((item) => {

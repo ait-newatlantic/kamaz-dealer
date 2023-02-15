@@ -1,8 +1,6 @@
-import { data } from 'data';
-
 export const Footer = () => {
     return (
-        <>
+        <div className="bg-white">
             <div className="flex justify-between mb-3 px-10">
                 <div className="space-y-1 text-sm">
                     <p className="uppercase font-bold">Liên hệ với chúng tôi</p>
@@ -11,12 +9,13 @@ export const Footer = () => {
                         Trụ sở chính KAMAZ: 156 Nam Kỳ Khởi Nghĩa, Phường Bến Nghé, Quận 1, Thành
                         phố Hồ Chí Minh.{' '}
                     </p>
-                    <p>{data.address}</p>
+                    <p>{process.env.COMPANY_ADDRESS}</p>
                     <p>
-                        Hotline (24/24): {data.phone_number} (Mr. {data.name})
+                        Hotline (24/24): {process.env.NEXT_PUBLIC_PHONE_NUMBER} (Mr.{' '}
+                        {process.env.NEXT_PUBLIC_USER_NAME})
                     </p>
                 </div>
-                <div className="grid grid-cols-2 gap-2 text-sm">
+                <div className="grid grid-cols-2 gap-4 text-sm">
                     <div>
                         <p className="font-bold">TRAO HÀNG TẬN NƠI</p>
                         <p>Đảm bảo giao xe đúng nơi với thời gian nhanh lẹ</p>
@@ -35,9 +34,9 @@ export const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className="bg-blue-700 text-center text-white p-2 text-sm">
+            <div className="bg-blue-700 text-center text-white p-2 text-sm font-bold">
                 Copyright ©{new Date().getFullYear()} - HÃNG XE TẢI KAMAZ VIỆT NAM
             </div>
-        </>
+        </div>
     );
 };

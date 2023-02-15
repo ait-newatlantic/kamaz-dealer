@@ -1,6 +1,5 @@
 import NextHead from 'next/head';
 import SEO_VALUES from 'components/SEO/values';
-import { data } from 'data';
 
 export interface SEOProps {
     title?: string;
@@ -25,11 +24,11 @@ export default function SEO({ title, description, canonicalPath, image }: SEOPro
                 content={`${SEO_VALUES.indexable === true ? 'index, follow' : 'noindex, nofollow'}`}
             />
             <meta name="description" content={description || SEO_VALUES.description} />
-            <meta name="description" content={data.address} />
-            <meta name="description" content={data.branch_name} />
-            <meta name="description" content={data.name} />
-            <meta name="description" content={data.phone_number} />
-            <meta name="description" content={data.email} />
+            <meta name="description" content={process.env.NEXT_PUBLIC_COMPANY_ADDRESS} />
+            <meta name="description" content={process.env.NEXT_PUBLIC_COMPANY_NAME} />
+            <meta name="description" content={process.env.NEXT_PUBLIC_USER_NAME} />
+            <meta name="description" content={process.env.NEXT_PUBLIC_PHONE_NUMBER} />
+            <meta name="description" content={process.env.NEXT_PUBLIC_USER_EMAIL} />
             <meta name="twitter:card" content={SEO_VALUES.twitter.cardType} />
             <meta property="og:image" content="/thumbnail.jpeg" />
             <meta

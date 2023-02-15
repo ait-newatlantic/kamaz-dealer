@@ -4,6 +4,7 @@ import { ModelSelect, MakeSelect } from 'database/models/Car';
 import Search from 'components/Search';
 import { getAsString } from 'utils';
 import SEO from 'components/SEO';
+import ImgWithFallback from 'components/ImgWithFallback/ImgWithFallback';
 
 export interface HomeProps {
     makes: MakeSelect[];
@@ -18,21 +19,35 @@ export default function Home({ makes, models }: HomeProps) {
                 description={'Công ty cổ phần KAMAZ VIỆT NAM.'}
                 canonicalPath={`/`}
             />
-            <div className="lg:grid grid-cols-2 relative hidden">
-                <img src="/img/banner.jpg" alt="banner" />
-                <img src="/img/banner2.jpg" alt="banner2" />
-                <div className="absolute bottom-0 inset-x-0 h-10 bg-white" />
-            </div>
             <div>
-                <img className="h-40 mx-auto font-bold" src="/img/kamaz.png" alt="logo" />
-                <p className="text-center mt-4 uppercase text-blue-700 font-bold">
-                    Công ty cổ phẩn KAMAZ Việt Nam
-                </p>
-                <p className="text-center mt-4 font-semibold">
-                    156 Nam Kỳ Khởi Nghĩa, Phường Bến Nghé, Quận 1, Thành phố Hồ Chí Minh
-                </p>
-                <div className="container m-12 mx-auto px-6 py-6 rounded shadow-lg xl:w-2/6 lg:w-2/6 md:w-3/6 sm:w-3/6">
-                    <Search makes={makes} models={models} />
+                <div className="lg:grid grid-cols-2 relative hidden">
+                    <ImgWithFallback
+                        height={1000}
+                        width={1000}
+                        src="/img/banner.webp"
+                        fallback="/img/banner.png"
+                        alt="banner"
+                    />
+                    <ImgWithFallback
+                        height={1000}
+                        width={1000}
+                        src="/img/banner2.webp"
+                        fallback="/img/banner2.png"
+                        alt="banner2"
+                    />
+                    <div className="absolute bottom-0 inset-x-0 h-10 bg-white" />
+                </div>
+                <div>
+                    <img className="h-40 mx-auto font-bold" src="/img/kamaz.png" alt="logo" />
+                    <p className="text-center mt-4 uppercase text-blue-700 font-bold">
+                        Công ty cổ phẩn KAMAZ Việt Nam
+                    </p>
+                    <p className="text-center mt-4 font-semibold uppercase">
+                        {process.env.NEXT_PUBLIC_COMPANY_ADDRESS}
+                    </p>
+                    <div className="container m-12 mx-auto px-6 py-6 rounded shadow-lg xl:w-2/6 lg:w-2/6 md:w-3/6 sm:w-3/6">
+                        <Search makes={makes} models={models} />
+                    </div>
                 </div>
             </div>
         </>
