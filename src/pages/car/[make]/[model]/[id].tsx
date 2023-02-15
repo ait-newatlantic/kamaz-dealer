@@ -61,8 +61,9 @@ export default function CarDetails({ car }: CarDetailsProps) {
                             </div>
                         </div>
                         <p className="mt-20 font-bold text-lg">
-                            Liên hệ mua xe: {process.env.PHONE_NUMBER} (Mr. {process.env.USER_NAME})
-                            | Email: {process.env.USER_EMAIL}
+                            Liên hệ mua xe: {process.env.NEXT_PUBLIC_PHONE_NUMBER} (Mr.{' '}
+                            {process.env.NEXT_PUBLIC_USER_NAME}) | Email:{' '}
+                            {process.env.NEXT_PUBLIC_USER_EMAIL}
                         </p>
                     </div>
                 </div>
