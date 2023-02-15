@@ -9,7 +9,7 @@ export const Footer = () => {
                         Trụ sở chính KAMAZ: 156 Nam Kỳ Khởi Nghĩa, Phường Bến Nghé, Quận 1, Thành
                         phố Hồ Chí Minh.{' '}
                     </p>
-                    <p>{process.env.COMPANY_ADDRESS}</p>
+                    <p>{process.env.NEXT_PUBLIC_COMPANY_ADDRESS}</p>
                     <p>
                         Hotline (24/24): {process.env.NEXT_PUBLIC_PHONE_NUMBER} (Mr.{' '}
                         {process.env.NEXT_PUBLIC_USER_NAME})
