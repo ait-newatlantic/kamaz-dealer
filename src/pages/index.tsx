@@ -45,7 +45,7 @@ export default function Home({ makes, models }: HomeProps) {
                     <p className="text-center mt-4 font-semibold uppercase">
                         {process.env.NEXT_PUBLIC_COMPANY_ADDRESS}
                     </p>
-                    <div className="container m-12 mx-auto px-6 py-6 rounded shadow-lg xl:w-2/6 lg:w-2/6 md:w-3/6 sm:w-3/6">
+                    <div className="container m-12 mx-auto px-6 py-6 rounded shadow-lg xl:w-2/6 lg:w-2/6 md:w-3/6 sm:w-3/6 bg-white">
                         <Search makes={makes} models={models} />
                     </div>
                 </div>

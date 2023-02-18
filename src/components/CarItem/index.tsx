@@ -2,7 +2,6 @@ import { CarModel } from 'database/models/Car';
 import Link from 'next/link';
 import { FiAlertTriangle } from 'react-icons/fi';
 import Spinner from 'components/Spinner';
-import Image from 'next/image';
 
 export interface CarItemProps {
     car: CarModel;
@@ -19,7 +18,7 @@ export default function CarItem({ car, error, isValidating }: CarItemProps) {
     }).format(car.price);
     return (
         <Link href="/car/[make]/[model]/[id]" as={normalizedUri}>
-            <div className="animate-fade-in">
+            <div className="animate-fade-in bg-white">
                 <div className="max-w-sm rounded overflow-hidden shadow-lg h-full cursor-pointer">
                     <div>
                         <img

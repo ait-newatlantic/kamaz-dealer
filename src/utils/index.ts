@@ -1,3 +1,7 @@
+import dayjs from 'dayjs';
+
+type DateFormat = 'DD-MM-YYYY' | 'HH:mm A · MMM DD, YYYY' | 'HH:mm:ss DD/MM/YYYY';
+
 export function getAsString(value: string | string[] | undefined): string {
     if (value === undefined) {
         return '';
@@ -27,4 +31,8 @@ export function sleep(ms: number) {
 
 export function capitalize(str: string): string {
     return str.replace(/\w\S*/g, (w) => w.replace(/^\w/, (c) => c.toUpperCase()));
+}
+
+export function formatTime(value: string, format: DateFormat = 'DD-MM-YYYY') {
+    return dayjs(value).format(format);
 }

@@ -1,5 +1,6 @@
 import { GetStaticProps } from 'next';
 import SEO from 'components/SEO';
+import { formatTime } from 'utils';
 
 interface NewsProps {
     news: any;
@@ -20,16 +21,26 @@ export default function Contact({ news }: NewsProps) {
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
                     {news.articles.map((item: any, index: any) => {
                         return (
-                            <a href={item.url} target="_blank" key={index} rel="noreferrer">
+                            <a
+                                className="bg-white border p-2"
+                                href={item.url}
+                                target="_blank"
+                                key={index}
+                                rel="noreferrer"
+                            >
                                 <div>
                                     <img src={item.urlToImage} alt={index} />
                                     <span className="text-xl font-bold">{item.title}</span>
                                 </div>
                                 <div className="mt-2">
-                                    <span className="text-l">{item.author}</span>
+                                    <span className="text-md">{item.author}</span>
                                 </div>
                                 <div className="mt-2">
-                                    <span className="text-l">{item.description}</span>
+                                    <span className="text-md">{item.description}</span>
+                                </div>
+                                <div className="flex justify-end">
+                                    {' '}
+                                    <span className="text-sm">{formatTime(item.publishedAt)}</span>
                                 </div>
                             </a>
                         );

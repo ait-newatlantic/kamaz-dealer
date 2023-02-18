@@ -1,4 +1,4 @@
-import { Knex } from 'knex';
+import Knex = require('knex');
 
 export async function up(knex: Knex) {
     return knex.schema.createTable('cars', (table) => {
@@ -8,7 +8,7 @@ export async function up(knex: Knex) {
         table.integer('year').notNullable();
         table.string('fuelType').notNullable();
         table.integer('kilometers').notNullable();
-        table.string('details').notNullable();
+        table.text('details').notNullable();
         table.integer('price').notNullable();
         table.string('photoUrl').notNullable();
         table.string('specUrl').notNullable();

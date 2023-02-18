@@ -26,7 +26,7 @@ export default function CarDetails({ car }: CarDetailsProps) {
                 image={car?.photoUrl}
             />
 
-            <div className="container mx-auto mt-10 shadow-2xl rounded-md">
+            <div className="container mx-auto mt-10 shadow-2xl rounded-md bg-white">
                 <div className="lg:flex">
                     <div className="w-full md:flex-shrink-0 lg:w-2/3 md:w-full sm:w-full">
                         <img
@@ -43,7 +43,7 @@ export default function CarDetails({ car }: CarDetailsProps) {
                             <span className="text-xl">{car.price !== 0 ? price : 'Liên hệ'}</span>
                         </span>
 
-                        <p className="mt-1 text-gray-600">{car?.details}</p>
+                        <p className="mt-1 text-gray-600 whitespace-pre-wrap">{car?.details}</p>
                         <div className="flex flex-row mt-6">
                             <div className="flex flex-col pr-5 items-center">
                                 <FaGasPump size={28} />
