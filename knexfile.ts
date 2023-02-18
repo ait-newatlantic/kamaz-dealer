@@ -1,4 +1,4 @@
-import Knex = require('knex');
+import Knex from 'knex';
 import path from 'path';
 
 // Update with your config settings.

@@ -1,4 +1,4 @@
-import Knex = require('knex');
+import Knex from 'knex';
 
 export async function seed(knex: Knex) {
     await knex('faq').del();

@@ -20,6 +20,16 @@
             "pre-commit": "lint-staged"
         }
     },
+    "lint-staged": {
+        "**/*.{json,css,scss,md,svg}": [
+            "prettier --write"
+        ],
+        "**/*.css": "stylelint --fix",
+        "**/*.{js,jsx,ts,tsx}": [
+            "prettier --write",
+            "eslint --fix"
+        ]
+    },
     "dependencies": {
         "@next/bundle-analyzer": "^9.5.2",
         "@tailwindcss/ui": "^0.6.2",
