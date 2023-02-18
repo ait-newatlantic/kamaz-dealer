@@ -56,7 +56,7 @@ export async function seed(knex: Knex) {
             price: 0,
             photoUrl:
                 'https://kamazvietnam.com.vn/vnt_upload/product/07_2018/thumbs/840_crop_43265_4x4_thung_1_1.jpg',
-            specUrl: 'https://cloud.newatlantic.vn/s/KHNj3tbooqaaBZA/preview',
+            specUrl: 'https://cloud.newatlantic.vn/core/preview?fileId=12172&x=3360&y=2100&a=true',
         },
         {
             id: 5,
@@ -70,7 +70,7 @@ export async function seed(knex: Knex) {
             price: 0,
             photoUrl:
                 'https://kamazvietnam.com.vn/vnt_upload/product/07_2018/thumbs/840_crop_53229_thung_dai_IMAE_2_1.jpg',
-            specUrl: 'https://cloud.newatlantic.vn/s/KHNj3tbooqaaBZA/preview',
+            specUrl: 'https://cloud.newatlantic.vn/core/preview?fileId=12171&x=3360&y=2100&a=true',
         },
         {
             id: 6,
