@@ -11,7 +11,7 @@ export interface SEOProps {
 
 export default function SEO({ title, description, canonicalPath, image }: SEOProps) {
     return (
-        <>
+        <html lang="vn">
             <NextHead>
                 <title>{`${title}` || SEO_VALUES.title}</title>
                 <link rel="icon" href="/favicon.ico" />
@@ -36,6 +36,8 @@ export default function SEO({ title, description, canonicalPath, image }: SEOPro
                 <meta name="description" content={description || SEO_VALUES.description} />
                 <meta name="twitter:card" content={SEO_VALUES.twitter.cardType} />
                 <meta property="og:image" content="/thumbnail.jpg" />
+                <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+                <link rel="manifest" href="/manifest.json" />
                 <meta
                     property="og:url"
                     content={`${SEO_VALUES.openGraph.host}${canonicalPath ?? ''}`}
@@ -66,6 +68,6 @@ export default function SEO({ title, description, canonicalPath, image }: SEOPro
                     ],
                 }}
             />
-        </>
+        </html>
     );
 }
