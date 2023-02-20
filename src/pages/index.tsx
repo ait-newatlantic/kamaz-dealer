@@ -34,7 +34,12 @@ export default function Home({ makes, models }: HomeProps) {
                     <div className="absolute bottom-0 inset-x-0 h-10 bg-white" />
                 </div>
                 <div>
-                    <img className="h-40 mx-auto font-bold" src="/img/kamaz.png" alt="logo" />
+                    <ImgWithFallback
+                        className="h-40 mx-auto font-bold"
+                        src="/img/kamaz.webp"
+                        fallback="/img/kamaz.png"
+                        alt="logo"
+                    />
                     <p className="text-center mt-4 uppercase text-blue-700 font-bold">
                         {process.env.NEXT_PUBLIC_COMPANY_NAME}
                     </p>
