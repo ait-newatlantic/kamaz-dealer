@@ -5,7 +5,6 @@ import Search from 'components/Search';
 import { getAsString } from 'utils';
 import SEO from 'components/SEO';
 import ImgWithFallback from 'components/ImgWithFallback/ImgWithFallback';
-import { NextSeo } from 'next-seo';
 
 export interface HomeProps {
     makes: MakeSelect[];

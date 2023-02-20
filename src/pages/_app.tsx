@@ -147,10 +147,15 @@ function MyApp({ Component, pageProps }: AppProps) {
                         <Component {...pageProps} />
                     </SWRConfig>
                 </div>
-                <div className="fixed right-10 bottom-20 bg-yellow-500 p-3 rounded-full animate-bounce">
-                    <a href={process.env.NEXT_PUBLIC_PHONE_NUMBER_ACTION}>
-                        <IconPhone className="text-white" />
-                    </a>
+                <div className="fixed right-10 bottom-20 flex items-center animate-bounce">
+                    <p className="text-white bg-red-700 p-px px-2 text-sm font-bold -mr-1">
+                        Mr. {process.env.NEXT_PUBLIC_USER_NAME}
+                    </p>
+                    <div className="bg-yellow-500 p-3 rounded-full">
+                        <a href={process.env.NEXT_PUBLIC_PHONE_NUMBER_ACTION}>
+                            <IconPhone className="text-white" />
+                        </a>
+                    </div>
                 </div>
                 <Footer />
             </div>
