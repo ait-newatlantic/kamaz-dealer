@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-empty-function */
 import 'styles/main.css';
 import { AppProps } from 'next/app';
 import { SWRConfig } from 'swr';
@@ -10,10 +11,14 @@ import 'nprogress/nprogress.css';
 import { Footer } from 'components/Footer';
 import { IconPhone } from 'components/icons/components/IconPhone';
 import { ContactBar } from 'components/ContactBar';
-import { useCallback } from 'react';
+import { useCallback, useEffect } from 'react';
 import type { Container, Engine } from 'tsparticles-engine';
 import Particles from 'react-particles';
 import { loadFull } from 'tsparticles';
+import { register, unregister } from 'next-offline/runtime';
+
+const registerSW = process.browser && 'serviceWorker' in navigator ? register : () => {};
+const unregisterSW = process.browser && 'serviceWorker' in navigator ? unregister : () => {};
 
 NProgress.configure({ showSpinner: false });
 
@@ -45,6 +50,14 @@ function MyApp({ Component, pageProps }: AppProps) {
     const particlesLoaded = useCallback(async (container: Container | undefined) => {
         await console.log(container);
     }, []);
+
+    useEffect(() => {
+        registerSW('/service-worker.js');
+        return () => {
+            unregisterSW();
+        };
+    }, []);
+
     return (
         <>
             <SEO
