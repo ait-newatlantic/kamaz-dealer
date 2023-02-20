@@ -11,7 +11,7 @@ export default function Faq({ faq }: FaqProps) {
     return (
         <>
             <SEO
-                title={'Liên hệ'}
+                title={'Liên hệ | Công ty cổ phần Kamaz Việt Nam'}
                 description={'Liên hệ với chúng tôi | Xe kamaz chính hãng'}
                 canonicalPath={`/faq`}
             />

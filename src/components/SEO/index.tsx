@@ -11,7 +11,7 @@ export interface SEOProps {
 export default function SEO({ title, description, canonicalPath, image }: SEOProps) {
     return (
         <NextHead>
-            <title>{`Kamaz Việt Nam | ${title}` || SEO_VALUES.title}</title>
+            <title>{`Công ty cổ phần Kamaz Việt Nam | ${title}` || SEO_VALUES.title}</title>
             <link rel="icon" href="/favicon.ico" />
             <meta charSet="utf-8" />
             <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />

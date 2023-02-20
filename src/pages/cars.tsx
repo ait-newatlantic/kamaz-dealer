@@ -41,7 +41,7 @@ export default function Cars({ makes, models, cars, totalPages, totalItems }: Ca
         <>
             <SEO title={'Search'} />
             <SEO
-                title={'Search'}
+                title={'Search | Công ty cổ phần Kamaz Việt Nam'}
                 description={`Search for used cars in your area.`}
                 canonicalPath={`/cars`}
             />

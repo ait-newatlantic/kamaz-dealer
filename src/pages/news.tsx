@@ -10,7 +10,7 @@ export default function Contact({ news }: NewsProps) {
     return (
         <>
             <SEO
-                title={'Tin tức'}
+                title={'Tin tức | Công ty cổ phần Kamaz Việt Nam'}
                 description={'Tin tức quốc tế | Xe tải Kamaz giá rẻ'}
                 canonicalPath={`/news`}
             />

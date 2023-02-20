@@ -14,7 +14,7 @@ export interface HomeProps {
 export default function Home({ makes, models }: HomeProps) {
     return (
         <>
-            <SEO title={'Trang chủ'} canonicalPath={`/`} />
+            <SEO title={'Trang chủ | Công ty cổ phần Kamaz Việt Nam'} canonicalPath={`/`} />
             <div>
                 <div className="lg:grid grid-cols-2 relative hidden">
                     <ImgWithFallback

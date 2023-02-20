@@ -5,7 +5,7 @@ export default function Introduction() {
     return (
         <>
             <SEO
-                title={'Giới thiệu'}
+                title={'Giới thiệu | Công ty cổ phần Kamaz Việt Nam'}
                 description={'Giới thiệu | Xe tải Kamaz giá rẻ'}
                 canonicalPath={`/introduction`}
             />
