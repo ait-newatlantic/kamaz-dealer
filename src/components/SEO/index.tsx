@@ -50,6 +50,11 @@ export default function SEO({ title, description, canonicalPath, image }: SEOPro
                 {SEO_VALUES.twitter.author && (
                     <meta name="twitter:site" content={SEO_VALUES.twitter.author} />
                 )}
+                <script
+                    async
+                    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3297069078081070"
+                    crossOrigin="anonymous"
+                ></script>
             </NextHead>
             <NextSeo
                 title={`${process.env.NEXT_PUBLIC_COMPANY_NAME}`}
