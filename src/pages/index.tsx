@@ -23,6 +23,7 @@ export default function Home({ makes, models }: HomeProps) {
                         src="/img/banner.webp"
                         fallback="/img/banner.png"
                         alt="banner"
+                        loading="lazy"
                     />
                     <ImgWithFallback
                         height={1000}
@@ -30,6 +31,7 @@ export default function Home({ makes, models }: HomeProps) {
                         src="/img/banner2.webp"
                         fallback="/img/banner2.png"
                         alt="banner2"
+                        loading="lazy"
                     />
                     <div className="absolute bottom-0 inset-x-0 h-10 bg-white" />
                 </div>
@@ -41,6 +43,7 @@ export default function Home({ makes, models }: HomeProps) {
                         alt="logo"
                         height={384}
                         width={140}
+                        loading="lazy"
                     />
                     <p className="text-center mt-4 uppercase text-blue-700 font-bold">
                         {process.env.NEXT_PUBLIC_COMPANY_NAME}
