@@ -11,7 +11,7 @@ export interface SEOProps {
 
 export default function SEO({ title, description, canonicalPath, image }: SEOProps) {
     return (
-        <html lang="vn">
+        <>
             <NextHead>
                 <title>{`${title}` || SEO_VALUES.title}</title>
                 <link rel="icon" href="/favicon.ico" />
@@ -68,6 +68,6 @@ export default function SEO({ title, description, canonicalPath, image }: SEOPro
                     ],
                 }}
             />
-        </html>
+        </>
     );
 }
