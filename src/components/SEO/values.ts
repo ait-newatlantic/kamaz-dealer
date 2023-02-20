@@ -5,7 +5,7 @@ export default {
     openGraph: {
         type: 'website',
         locale: 'br_PT',
-        host: 'https://cars-eight.vercel.app',
+        host: process.env.NEXT_PUBLIC_DOMAIN,
         title: 'Cars',
         description: 'Search cars for sale.',
         image: '',
