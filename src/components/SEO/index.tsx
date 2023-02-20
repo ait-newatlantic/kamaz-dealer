@@ -25,7 +25,7 @@ export default function SEO({ title, description, canonicalPath, image }: SEOPro
             />
             <meta name="description" content={description || SEO_VALUES.description} />
             <meta name="twitter:card" content={SEO_VALUES.twitter.cardType} />
-            <meta property="og:image" content="/thumbnail.jpeg" />
+            <meta property="og:image" content="/thumbnail.jpg" />
             <meta
                 property="og:url"
                 content={`${SEO_VALUES.openGraph.host}${canonicalPath ?? ''}`}

@@ -14,7 +14,7 @@ export default {
         host: process.env.NEXT_PUBLIC_DOMAIN,
         title: 'Kamaz',
         description: 'Chuyên cung cấp xe tải giá rẻ',
-        image: '',
+        image: '/thumbnail.jpg',
         site_name: 'Kamaz',
     },
     twitter: {
