@@ -32,6 +32,7 @@ export default function SEO({ title, description, canonicalPath, image }: SEOPro
                         SEO_VALUES.indexable === true ? 'index, follow' : 'noindex, nofollow'
                     }`}
                 />
+                <meta name="theme-color" content="#4285f4" />
                 <meta name="description" content={description || SEO_VALUES.description} />
                 <meta name="twitter:card" content={SEO_VALUES.twitter.cardType} />
                 <meta property="og:image" content="/thumbnail.jpg" />
