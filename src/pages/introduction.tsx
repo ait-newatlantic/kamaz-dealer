@@ -6,8 +6,8 @@ export default function Introduction() {
         <>
             <SEO
                 title={'Giới thiệu'}
-                description={'Tin tức quốc tế | Xe tải Kamaz giá rẻ'}
-                canonicalPath={`/news`}
+                description={'Giới thiệu | Xe tải Kamaz giá rẻ'}
+                canonicalPath={`/introduction`}
             />
             <div className="text-3xl text-center font-bold mt-20">
                 <h1>Lời ngỏ</h1>
