@@ -39,6 +39,8 @@ export default function Home({ makes, models }: HomeProps) {
                         src="/img/kamaz.webp"
                         fallback="/img/kamaz.png"
                         alt="logo"
+                        height={600}
+                        width={130}
                     />
                     <p className="text-center mt-4 uppercase text-blue-700 font-bold">
                         {process.env.NEXT_PUBLIC_COMPANY_NAME}
