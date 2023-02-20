@@ -100,5 +100,61 @@ export async function seed(knex: Knex) {
                 'https://kamazvietnam.com.vn/vnt_upload/product/06_2018/thumbs/840_crop_1T0A1887_3.jpg',
             specUrl: 'https://cloud.newatlantic.vn/s/KHNj3tbooqaaBZA/preview',
         },
+        {
+            id: 8,
+            make: 'Xe chuyên dụng',
+            model: 'XE CỨU HỎA KAMAZ AC 5,0 - 40 43253 (4X2) 5M3',
+            year: 2019,
+            fuelType: 'Dầu DO',
+            kilometers: 0,
+            details:
+                'XE CỨU HỎA KAMAZ AC 5,0 - 40 43253 (4X2) 5M3 là một trong những mẫu xe chuyên dụng được sản xuất bởi hãng xe tải Kamaz của Nga. Được trang bị động cơ Kamaz 740.622-400 (Euro 4), công suất 240 mã lực và hộp số sàn 5 cấp, chiếc xe cứu hỏa này có khả năng vận hành mạnh mẽ và ổn định trên mọi địa hình.\nVới khối lượng tổng tải trọng lên đến 10.650 kg, chiều dài thùng chở lên đến 5m3, chiếc xe cứu hỏa Kamaz này có khả năng chở đầy đủ trang thiết bị, dụng cụ cứu hỏa và đội ngũ cứu hộ. Xe còn được trang bị hệ thống âm thanh và ánh sáng cảnh báo khẩn cấp, đảm bảo an toàn cho người và tài sản trong quá trình cứu hỏa.\nNgoài ra, xe cứu hỏa Kamaz AC 5,0 - 40 43253 còn được trang bị nhiều tính năng và tiện ích hỗ trợ như hệ thống điều khiển tốc độ tự động, hệ thống phanh ABS và EBD, hệ thống phanh tay điện tử, hệ thống cân bằng điện tử ESP, hệ thống giảm xóc, hệ thống điều hòa không khí và hệ thống kính điện. Tất cả những tính năng và trang thiết bị trên đã giúp chiếc xe cứu hỏa Kamaz trở thành một trong những lựa chọn hàng đầu cho các đội cứu hỏa trên toàn thế giới.',
+            price: 0,
+            photoUrl:
+                'https://kamazvietnam.com.vn/vnt_upload/product/03_12_2021/thumbs/840_crop_z2942784124023_4f197ee7045d6935efd70cbc6b331cf1.jpg',
+            specUrl: 'https://cloud.newatlantic.vn/s/KHNj3tbooqaaBZA/preview',
+        },
+        {
+            id: 9,
+            make: 'Xe chuyên dụng',
+            model: 'XE BỒN XĂNG DẦU KAMAZ 53229 (6X4) - 18 M3',
+            year: 2019,
+            fuelType: 'Dầu DO',
+            kilometers: 0,
+            details:
+                'XE BỒN XĂNG DẦU KAMAZ 53229 (6X4) - 18 M3 là một loại xe tải được thiết kế để vận chuyển nhiên liệu như xăng dầu. Xe được trang bị động cơ diesel Kamaz với dung tích xilanh 10.85L, cho công suất tối đa 300 mã lực và mô-men xoắn cực đại 1.200 Nm. Xe có thể chở được tối đa 18 m3 nhiên liệu trong bồn được thiết kế chuyên dụng.\nNgoài ra, xe còn được trang bị các tính năng an toàn như hệ thống phanh ABS, cảm biến áp suất lốp, hệ thống phân phối lực phanh điện tử EBD và cảm biến lùi. Thiết kế của xe bồn xăng dầu Kamaz 53229 (6X4) - 18 M3 cũng được tối ưu hóa để đảm bảo sự ổn định và an toàn trong quá trình vận hành.',
+            price: 0,
+            photoUrl:
+                'https://kamazvietnam.com.vn/vnt_upload/product/06_2018/53229_6x4_bon_18_khoi_3.jpg',
+            specUrl: 'https://cloud.newatlantic.vn/s/KHNj3tbooqaaBZA/preview',
+        },
+        {
+            id: 10,
+            make: 'Xe chuyên dụng',
+            model: 'XE BỒN XĂNG DẦU KAMAZ 6540 (8X4) - 23 M3',
+            year: 2019,
+            fuelType: 'Dầu DO',
+            kilometers: 0,
+            details:
+                'XE BỒN XĂNG DẦU KAMAZ 6540 (8X4) - 23 M3 là một chiếc xe tải bồn được thiết kế để vận chuyển xăng dầu, dầu diesel và các loại nhiên liệu khác. Chiếc xe này có khả năng chứa lượng xăng dầu lên đến 23m3 và được trang bị động cơ Kamaz 740.62-400, dung tích 10,85 lít, công suất tối đa 400 mã lực và mô-men xoắn cực đại 1840 Nm.\nXe bồn xăng dầu Kamaz 6540 được trang bị hệ thống treo phía trước bằng nhíp lá và hệ thống treo phía sau bằng nhíp lá kép. Hệ thống phanh bao gồm phanh đĩa ở cả hai trục và hệ thống ABS, giúp xe dừng lại nhanh chóng và an toàn.\nNgoài ra, chiếc xe bồn xăng dầu Kamaz 6540 còn được trang bị các tính năng tiêu chuẩn như cabin rộng rãi và thoải mái cho tài xế, hệ thống điều hòa không khí, đầu đĩa CD và AM/FM radio.',
+            price: 0,
+            photoUrl:
+                'https://kamazvietnam.com.vn/vnt_upload/product/06_2018/6540_xYng_dYu_2_1.jpg',
+            specUrl: 'https://cloud.newatlantic.vn/s/KHNj3tbooqaaBZA/preview',
+        },
+        {
+            id: 11,
+            make: 'Xe chuyên dụng',
+            model: 'XE BỒN XĂNG DẦU KAMAZ 6540 (8X4) - 25 M3',
+            year: 2019,
+            fuelType: 'Dầu DO',
+            kilometers: 0,
+            details:
+                'Xe bồn xăng dầu Kamaz 6540 (8x4) - 25 m3 là một trong những sản phẩm của Kamaz dùng để vận chuyển xăng dầu. Xe được trang bị động cơ Kamaz 740.62-400, dung tích 10,85 lít, công suất 400 mã lực, cho tốc độ tối đa là 90 km/h. Xe có trọng lượng toàn bộ 32 tấn và tải trọng 24 tấn.\nThùng bồn được làm bằng thép không gỉ có dung tích 25 m3, được thiết kế để chịu được áp lực lớn và chống lại va đập trong quá trình vận chuyển. Hệ thống phun xăng được trang bị đầy đủ và được điều khiển bằng một bộ điều khiển điện tử.\nNgoài ra, xe còn được trang bị hệ thống treo thích hợp để giảm chấn và tăng độ ổn định cho xe khi vận hành trên đường, cùng với đó là hệ thống phanh đĩa và hệ thống treo phụ trợ bằng khí nén. Xe bồn xăng dầu Kamaz 6540 (8x4) - 25 m3 được thiết kế để đảm bảo an toàn và hiệu quả cho việc vận chuyển xăng dầu.',
+            price: 0,
+            photoUrl:
+                'https://kamazvietnam.com.vn/vnt_upload/product/06_2018/6540_8x4_bon_nhom_25m3_65446_12.jpg',
+            specUrl: 'https://cloud.newatlantic.vn/s/KHNj3tbooqaaBZA/preview',
+        },
     ]);
 }

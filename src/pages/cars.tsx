@@ -47,7 +47,7 @@ export default function Cars({ makes, models, cars, totalPages, totalItems }: Ca
             />
             <div className="flex flex-col justify-between">
                 <div className="grid justify-center grid-cols-1 lg:grid-cols-3 xl:grid-cols-3">
-                    <div className="grid-cols-1 self-start justify-items-center mt-5 mx-12 px-4 py-1 rounded shadow-lg col-span-1">
+                    <div className="grid-cols-1 self-start justify-items-center mt-5 mx-12 px-4 py-1 rounded shadow-lg col-span-1 bg-white">
                         <Search makes={makes} models={models} />
                     </div>
 
