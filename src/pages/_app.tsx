@@ -17,6 +17,7 @@ import Particles from 'react-particles';
 import { loadFull } from 'tsparticles';
 import { register, unregister } from 'next-offline/runtime';
 import ReactGA from 'react-ga4';
+import { Analytics } from '@vercel/analytics/react';
 
 ReactGA.initialize(process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS || '');
 
@@ -175,6 +176,7 @@ function MyApp({ Component, pageProps }: AppProps) {
                 </div>
                 <Footer />
             </div>
+            <Analytics />
         </>
     );
 }
