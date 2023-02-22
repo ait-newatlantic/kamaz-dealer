@@ -19,7 +19,11 @@ import { register, unregister } from 'next-offline/runtime';
 import ReactGA from 'react-ga4';
 import { Analytics } from '@vercel/analytics/react';
 
-ReactGA.initialize(process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS || '');
+ReactGA.initialize([
+    {
+        trackingId: process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS as string,
+    },
+]);
 
 const registerSW = process.browser && 'serviceWorker' in navigator ? register : () => {};
 const unregisterSW = process.browser && 'serviceWorker' in navigator ? unregister : () => {};
