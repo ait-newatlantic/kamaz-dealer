@@ -38,6 +38,8 @@ Router.events.on('routeChangeError', (err, url) => {
     NProgress.done();
 });
 
+Router.events.on('routeChangeComplete', (url) => ReactGA.pageview(url));
+
 const trackPageView = (pathname) => {
     ReactGA.set({ page: pathname });
     ReactGA.pageview(pathname);
