@@ -25,6 +25,15 @@ ReactGA.initialize([
     },
 ]);
 
+// Send pageview with a custom path
+ReactGA.send({ hitType: 'pageview', page: '/' });
+
+// Send a custom event
+ReactGA.event({
+    category: 'Home',
+    action: 'Enter',
+});
+
 const registerSW = process.browser && 'serviceWorker' in navigator ? register : () => {};
 const unregisterSW = process.browser && 'serviceWorker' in navigator ? unregister : () => {};
 
