@@ -16,7 +16,9 @@ import type { Container, Engine } from 'tsparticles-engine';
 import Particles from 'react-particles';
 import { loadFull } from 'tsparticles';
 import { register, unregister } from 'next-offline/runtime';
-import ReactGA from 'react-ga';
+import ReactGA from 'react-ga4';
+
+ReactGA.initialize(process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS || '');
 
 const registerSW = process.browser && 'serviceWorker' in navigator ? register : () => {};
 const unregisterSW = process.browser && 'serviceWorker' in navigator ? unregister : () => {};
@@ -38,8 +40,6 @@ Router.events.on('routeChangeError', (err, url) => {
     NProgress.done();
 });
 
-Router.events.on('routeChangeComplete', (url) => ReactGA.pageview(url));
-
 function MyApp({ Component, pageProps }: AppProps) {
     const particlesInit = useCallback(async (engine: Engine) => {
         console.log(engine);
@@ -54,32 +54,10 @@ function MyApp({ Component, pageProps }: AppProps) {
         await console.log(container);
     }, []);
 
-    const trackPageView = (pathname) => {
-        ReactGA.set({ page: pathname });
-        ReactGA.pageview(pathname);
-    };
-
     useEffect(() => {
         registerSW('/service-worker.js');
         return () => {
             unregisterSW();
-        };
-    }, []);
-
-    useEffect(() => {
-        ReactGA.initialize(process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS || '');
-        trackPageView(window.location.pathname);
-
-        const handleRouteChange = (pathname) => {
-            trackPageView(pathname);
-        };
-
-        // listen for page changes
-        const cleanup = Router.events.on('routeChangeComplete', handleRouteChange);
-
-        // cleanup event listener
-        return () => {
-            cleanup;
         };
     }, []);
 
