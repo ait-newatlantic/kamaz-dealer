@@ -8,7 +8,7 @@ const withOffline = require('next-offline');
 module.exports = withPlugins([[withBundleAnalyzer({})]], {
     images: {
         deviceSizes: [320, 640, 768, 1024, 1200],
-        domains: ['kamazvietnam.com.vn', 'cloud.newatlantic.vn'],
+        domains: ['kamazvietnam.com.vn', 'cloud.newatlantic.vn', 'kamazdongnai.com'],
     },
 });
 

@@ -156,5 +156,88 @@ export async function seed(knex: Knex) {
                 'https://kamazvietnam.com.vn/vnt_upload/product/06_2018/6540_8x4_bon_nhom_25m3_65446_12.jpg',
             specUrl: 'https://cloud.newatlantic.vn/s/KHNj3tbooqaaBZA/preview',
         },
+        {
+            id: 12,
+            make: 'Xe tải thùng',
+            model: 'XE TẢI THÙNG KAMAZ 53228 (6x6)',
+            year: 2019,
+            fuelType: 'Dầu DO',
+            kilometers: 0,
+            details:
+                'KAMAZ 53228 - một chiếc xe thuộc thể loại khung gầm lớn. Nó có ba trục và 3 cầu thật với công thức bánh xe 6 x 6. Bên ngoài, chiếc xe này không có gì nổi bật so với những mẫu xe khác do nhà máy Kama sản xuất. Thiết kế của nó khá cổ điển. Xe tải có thể được sử dụng cho các mục đích khác nhau, bao gồm cả vận chuyển đường dài\nNhờ các tính năng riêng biệt và một cầu trước dẫn đầu, 53228 có thể sử được sử dụng ở các khu vực địa hình mà hầu hết các dòng xe khác không thể vượt qua. Có hệ thống treo lò xo phía trước và phía sau. Hệ thống treo trước trang bị lò xo lá giảm chấn thủy lực. Hệ thống treo sau có thiết kế cân đối.',
+            price: 0,
+            photoUrl:
+                'https://kamazdongnai.com/public/userfiles/product/Kamaz_53228_quan_doi_1-2z.jpg',
+            specUrl: 'https://cloud.newatlantic.vn/s/EKagkYZnyHqasqY/preview',
+        },
+        {
+            id: 13,
+            make: 'Xe tải gắn cẩu',
+            model: 'Xe tải 8x4 gắn cẩu Palfinger 10 tấn',
+            year: 2019,
+            fuelType: 'Dầu DO',
+            kilometers: 0,
+            details:
+                'Cẩu tự hành đã luôn là bạn đồng hành cho công cuộc kiến thiết một đất nước, bởi lẽ cẩu tự hành mang tính di động, dễ dàng di chuyển khi làm việc, các ngành nghề của cẩu tự hành lại đa dạng, từ xây dựng, vận chuyển hàng hóa, logistics, đến cứu hộ cứu nạn.\nXe tải cẩu Kamaz 6540 - Palfinger 10 Tấn hứa hẹn là sản phẩm mang lại đỉnh cao chất lượng khi mang cho mình 2 dòng công nghệ từ Áo và Nga với giá thành siêu hợp lý, đêm đến khả năng thu hồi vốn và gia tăng lợi nhuận cho các nhà đầu tư.',
+            price: 0,
+            photoUrl:
+                'https://kamazdongnai.com/public/userfiles/product/768a5a00-6d5f-46de-9dd4-94324ef559cb.jpg',
+            specUrl: 'https://cloud.newatlantic.vn/s/sTx6CxWN2BYLJM9/preview',
+        },
+        {
+            id: 14,
+            make: 'Xe tải gắn cẩu',
+            model: 'Xe cơ sở Kamaz 6540 long II (8x4)',
+            year: 2019,
+            fuelType: 'Dầu DO',
+            kilometers: 0,
+            details:
+                'Cẩu tự hành đã luôn là bạn đồng hành cho công cuộc kiến thiết một đất nước, bởi lẽ cẩu tự hành mang tính di động, dễ dàng di chuyển khi làm việc, các ngành nghề của cẩu tự hành lại đa dạng, từ xây dựng, vận chuyển hàng hóa, logistics, đến cứu hộ cứu nạn.\nXe tải cẩu Kamaz 6540 - Palfinger 10 Tấn hứa hẹn là sản phẩm mang lại đỉnh cao chất lượng khi mang cho mình 2 dòng công nghệ từ Áo và Nga với giá thành siêu hợp lý, đêm đến khả năng thu hồi vốn và gia tăng lợi nhuận cho các nhà đầu tư.',
+            price: 0,
+            photoUrl:
+                'https://kamazdongnai.com/public/userfiles/z3210023024566_90491f19eecbecbc9c033bc2cb78830b.jpg',
+            specUrl: 'https://cloud.newatlantic.vn/s/HYTRfSMEY7G894f/preview',
+        },
+        {
+            id: 15,
+            make: 'Xe tải gắn cẩu',
+            model: 'Xe tải cẩu KANGLIM 5 tấn 53229(6x4)',
+            year: 2019,
+            fuelType: 'Dầu DO',
+            kilometers: 0,
+            details:
+                'Cẩu tự hành đã luôn là bạn đồng hành cho công cuộc kiến thiết một đất nước, bởi lẽ cẩu tự hành mang tính di động, dễ dàng di chuyển khi làm việc, các ngành nghề của cẩu tự hành lại đa dạng, từ xây dựng, vận chuyển hàng hóa, logistics, đến cứu hộ cứu nạn.\nXe tải cẩu Kamaz 6540 - Palfinger 10 Tấn hứa hẹn là sản phẩm mang lại đỉnh cao chất lượng khi mang cho mình 2 dòng công nghệ từ Áo và Nga với giá thành siêu hợp lý, đêm đến khả năng thu hồi vốn và gia tăng lợi nhuận cho các nhà đầu tư.',
+            price: 0,
+            photoUrl:
+                'https://kamazdongnai.com/public/userfiles/278498957_1202424847191588_1042322272926103517_n.jpg',
+            specUrl: 'https://cloud.newatlantic.vn/s/zsGKwmkgx6p8Tiw/preview',
+        },
+        {
+            id: 16,
+            make: 'Xe tải gắn cẩu',
+            model: 'Xe tải cẩu HKTC 7 tấn 6540(8x4)',
+            year: 2019,
+            fuelType: 'Dầu DO',
+            kilometers: 0,
+            details:
+                'Cẩu tự hành đã luôn là bạn đồng hành cho công cuộc kiến thiết một đất nước, bởi lẽ cẩu tự hành mang tính di động, dễ dàng di chuyển khi làm việc, các ngành nghề của cẩu tự hành lại đa dạng, từ xây dựng, vận chuyển hàng hóa, logistics, đến cứu hộ cứu nạn.\nXe tải cẩu Kamaz 6540 - Palfinger 10 Tấn hứa hẹn là sản phẩm mang lại đỉnh cao chất lượng khi mang cho mình 2 dòng công nghệ từ Áo và Nga với giá thành siêu hợp lý, đêm đến khả năng thu hồi vốn và gia tăng lợi nhuận cho các nhà đầu tư.',
+            price: 0,
+            photoUrl:
+                'https://kamazdongnai.com/public/userfiles/18c89f53-8ff6-4e58-bafc-804614cc1e7f.jpg',
+            specUrl: 'https://cloud.newatlantic.vn/s/gMXNe2HkoKyxint/preview',
+        },
+        {
+            id: 17,
+            make: 'Xe tải gắn cẩu',
+            model: 'Xe tải cẩu HKTC 5 tấn 53229(6x4)',
+            year: 2019,
+            fuelType: 'Dầu DO',
+            kilometers: 0,
+            details:
+                'Cẩu tự hành đã luôn là bạn đồng hành cho công cuộc kiến thiết một đất nước, bởi lẽ cẩu tự hành mang tính di động, dễ dàng di chuyển khi làm việc, các ngành nghề của cẩu tự hành lại đa dạng, từ xây dựng, vận chuyển hàng hóa, logistics, đến cứu hộ cứu nạn.\nXe tải cẩu Kamaz 6540 - Palfinger 10 Tấn hứa hẹn là sản phẩm mang lại đỉnh cao chất lượng khi mang cho mình 2 dòng công nghệ từ Áo và Nga với giá thành siêu hợp lý, đêm đến khả năng thu hồi vốn và gia tăng lợi nhuận cho các nhà đầu tư.',
+            price: 0,
+            photoUrl: 'https://kamazdongnai.com/public/userfiles/product/65117_tai_cau__4D-8_1.jpg',
+            specUrl: '',
+        },
     ]);
 }
